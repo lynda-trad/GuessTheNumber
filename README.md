@@ -1,4 +1,4 @@
--- Guess The Number ! --
+# -- Guess The Number ! --
 
 The program will randomly choose a number between 1 and 100.
 
