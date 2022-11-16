@@ -12,6 +12,7 @@ public class GuessTheNumber
 		int numberGuessed = 0;
 		System.out.println("~ Guess The Number ! ~");
 		System.out.println("~ Please enter a number between 1 and 100. ~");
+		
 		while(numberGuessed != numberToGuess)
 		{
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
@@ -29,11 +30,12 @@ public class GuessTheNumber
             	{
             		System.out.println("~ The number to guess is HIGHER than " + numberGuessed + " ! ~");
             	}
-            	else if (numberGuessed > numberToGuess)
+            	else
             	{
             		System.out.println("~ The number to guess is LOWER than " + numberGuessed + " ! ~");
             	}
-            } catch (NumberFormatException e) 
+            }
+            catch (NumberFormatException e) 
             {
                 System.out.println("Please enter an number.");
             }
